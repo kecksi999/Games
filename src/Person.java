@@ -1,16 +1,12 @@
 import org.newdawn.slick.*;
 
-public class person extends BasicGame {
+public class Person extends BasicGame {
     private Image playerSprite;
     private float x = 400, y = 300;
     private float speed = 0.2f;
 
-    public person() {
+    public Person() {
         super("2D Player Movement");
-    }
-
-    public person(String title) {
-        super(title);
     }
 
     @Override
@@ -38,7 +34,7 @@ public class person extends BasicGame {
 
     @Override
     public void render(GameContainer gc, Graphics g) throws SlickException {
-        playerSprite.draw(x, y); // Zeichnet die Spielfigur
+        playerSprite.draw(x, y);
         g.drawString("Steuerung: WASD oder Pfeiltasten", 10, 30);
     }
 
